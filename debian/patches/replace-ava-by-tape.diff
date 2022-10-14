@@ -1,0 +1,28 @@
+Description: replace ava by tape in test
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-05-28
+
+--- a/test.js
++++ b/test.js
+@@ -1,5 +1,5 @@
+-import test from 'ava';
+-import prependHttp from '.';
++const test = require('tape');
++const prependHttp = require('.');
+ 
+ test('prepend http', t => {
+ 	t.is(prependHttp('sindresorhus.com', {https: false}), 'http://sindresorhus.com');
+@@ -14,10 +14,12 @@
+ 	t.is(prependHttp('/relative'), '/relative');
+ 	t.is(prependHttp('mailto:info@site.com'), 'mailto:info@site.com');
+ 	t.is(prependHttp('tel:1234567890'), 'tel:1234567890');
++    t.end();
+ });
+ 
+ test('https option', t => {
+ 	t.is(prependHttp('sindresorhus.com', {https: true}), 'https://sindresorhus.com');
+ 	t.is(prependHttp('//sindresorhus.com', {https: true}), '//sindresorhus.com');
+ 	t.is(prependHttp('localhost:8000', {https: true}), 'https://localhost:8000');
++    t.end();
+ });

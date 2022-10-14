@@ -1,0 +1,44 @@
+node-prepend-http (3.0.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use pkg-js-tools auto install
+  * Enable upstream test using tape instead of ava
+  * Add "Multi-Arch: foreign"
+  * New upstream version 3.0.1
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 28 May 2020 17:35:36 +0200
+
+node-prepend-http (2.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 30 Jan 2018 18:49:44 +0530
+
+node-prepend-http (1.0.4-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 16 Jul 2017 15:31:00 +0530
+
+node-prepend-http (1.0.4-1) experimental; urgency=low
+
+  * Initial release (Closes: #854067)
+
+ -- Shirish Togarla <shirishtogarla533@gmail.com>  Fri, 03 Feb 2017 16:02:17 +0000
